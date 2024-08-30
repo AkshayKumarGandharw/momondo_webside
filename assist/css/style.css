@@ -1,0 +1,117 @@
+*{
+
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/*HEADER SECTION START*/
+
+header{
+
+    background-color: #21033A;
+}
+
+header .container-lg ul li a{
+
+        color:white;
+}
+header .container-lg ul li a:hover{
+
+    color:#FF2D45;
+}
+#myform ul li a{
+
+    color:black;
+    
+}
+/*HEADER SECTION END*/
+
+/*HOME SECTION START*/
+
+
+#home_section{
+
+    height:600px;
+    background: url(../img/background\ heart.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+
+}
+
+#home_section .container .row .col {
+
+    margin:60px auto 60px 40px;
+
+}
+.bg-purple{
+
+    background-color:#5C327A;
+    
+
+}
+#home_section .container .row .col{
+
+   
+    
+}
+/*HOME SECTION END*/
+/* BUTTON PILLS TAB START */
+
+#home_section .container .row .col-10 .row ul li {
+
+    color:white;
+}
+#home_section .container .row .col-10 .row ul li :hover{
+
+    background-color:#FF2D45;
+    color:white;
+}
+#home_section .container .row .col-10 .row ul li .active{
+
+    background-color:#FF2D45;
+    color:white;
+}
+
+
+/* BUTTON PILLS TAB END */
+
+/*checkbox start */
+
+#check {
+
+    font-size:12px;
+}
+
+/*checkbox end */
+
+/*Button search start*/
+
+.my_btn #btn_mysearch {
+
+    
+    /* border-radius:50%; */
+    background-color:#FF2D45;
+    color:white;
+    margin:50px;
+    
+}
+
+#home_section .row .col-2 .my_btn #btn_mysearch {
+
+    margin:30px;
+    padding:30px;
+    /* width:50%; */
+    height:50%;
+    border-radius:50%;
+   
+}
+#home_section .container #my_button_tab{
+
+    
+
+}
+
+
+/*Button search end*/
+
