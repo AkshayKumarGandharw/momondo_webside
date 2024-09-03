@@ -31,7 +31,7 @@ header .container-lg ul li a:hover{
 
 #home_section{
 
-    height:450px;
+    height:615px;
     background: url(../img/background\ heart.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
@@ -96,20 +96,35 @@ header .container-lg ul li a:hover{
     color:white;
     margin-left:50px;
     padding:15px;
-   
+    
 }
 /*Button search end*/
 /*HOME SECTION END*/
 /*FUN SECTION START*/
 
 #fun_section{
-
-
-    background:url();
+    height:350px;
+    /* margin-top:200px; */
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url(../img/fun.jpg) no-repeat ;
+    background:cover;
+    background-position:center center;
 }
 
+#fun_section .container .row {
 
 
+}
+#box {
+
+    font-size:18px;
+   
+}
+
+#fun_section .container .row #box {
+        margin-top:25px;
+        padding:15px;
+        background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+}
 
 /*FUN SECTION END*/
 
