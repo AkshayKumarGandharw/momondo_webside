@@ -59,42 +59,39 @@
                     <a class="nav-link" href="#">Inspirations</a>
                   </li>
                 </ul>
+
                   <!--menus end-->
 
+                  <!--dropdown start  [LANGUAGE] -->
                 <form class="d-flex " id="myform">
+                  
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a href="javascript:void()" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" >
+                          <img src="./assist/img/cheap2.png" alt="">
+                          English
+                        </a>
 
-
-                    <!--dropdown start  [LANGUAGE] -->
-
-                    <div class="dropdown ">
-                      <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="./assist/img/cheap2.png" alt="">
-                        English
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <img src="./assist/img/cheap2.png" alt="">
-                              English
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <img src="./assist/img/goedkope.png" class="mr-1 "   alt="">
-                              Hindi
-                          </a>
-                        </li>
-                      </ul>
-                    </div>  
-
-                    <!--dropdown end -->
-
-                    <!--button Log in start-->
+                      <div class="dropdown-menu "  id="drowpdown_div" >
+                        <a href="javascript:void()" class="dropdown-item">
+                          <img src="./assist/img/cheap2.png" alt="">
+                          English
+                        </a>
+                        <a href="javascript:void()" class="dropdown-item">
+                          <img src="./assist/img/cheap2.png" alt="">
+                          Hindi
+                        </a>
+                      </div>
+                    </li>
+                </ul>
+                  <!--dropdown end -->
+                  <!--button Log in start-->
                   <button class="btn text-success fw-bold"  type="submit">Log In</button>
 
                    <!--button Log in end-->
 
                 </form>
+               
               </div>
             </div>
           </nav>
@@ -129,8 +126,8 @@
            <!--BUTTON PILLS TAB START-->
 
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link text-white" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" 
+              <li class="nav-item " role="presentation">
+                <button class="nav-link text-white active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" 
                 type="button" role="tab" aria-controls="pills-home" aria-selected="true">
                 <i class="bi bi-airplane-engines-fill"></i>&nbsp Flights</button>
               </li>
@@ -150,7 +147,7 @@
               <div class="tab-pane fade show .active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" 
               tabindex="0"> 
             <!-- flights tab working start-->
-            <div class="row py-0 my-0">
+            <div class="row py-0 my-0" >
               <!-- col first -->
   
   
@@ -172,7 +169,7 @@
   
   
                 <!-- col second -->
-              <div class="col-lg-5  d-flex align-items-center">
+              <div class="col-lg-6 col-md-mt-4 d-flex align-items-center">
   
                 <div class="mx-1">
                   <input type="date" class="form-control"name="dateto">
@@ -182,64 +179,21 @@
                   <input type="date" class="form-control"name="datefrom">
                 </div>
               <div>
-                   
-  
-  
                   <!--dropdown start [PASSANGER]-->
-  
-                  <div class="dropdown ">
-                    <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                     aria-expanded="false">
-                     <i class="bi bi-people-fill"></i>1-Pessanger
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi bi-people-fill"></i>2-Pessanger
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi bi-people-fill"></i>3-Pessanger
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi bi-people-fill"></i>4-Pessanger
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi bi-people-fill"></i>5-Pessanger
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi bi-people-fill"></i>6-Pessanger
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi bi-people-fill"></i>7-Pessanger
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi bi-people-fill"></i>8-Pessanger
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi bi-people-fill"></i>9-Pessanger
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi bi-people-fill"></i>10-Pessanger
-                        </a>
-                      </li>
-                    </ul>
-                  </div>  
+                  
+                   <select class="form-select form-select-md" >
+                      <option value="1">1-Pessanger</option>
+                      <option value="2">2-Pessanger</option>
+                      <option value="3">3-Pessanger</option>
+                      <option value="4">4-Pessanger</option>
+                      <option value="5">5-Pessanger</option>
+                      <option value="6">6-Pessanger</option>
+                      <option value="7">7-Pessanger</option>
+                      <option value="8">8-Pessanger</option>
+                      <option value="9">9-Pessanger</option>
+                      <option value="10">10-Pessanger</option>
+                    </select>
+
                   <!--dropdown end -->
   
                   <!-- origin/destination/date end-->
@@ -249,9 +203,9 @@
               </div>
   
                <!-- col third -->
-               <div class="col-lg-2">
+               <div class="col-lg-1 col-md-3">
                     
-                        <input type="button" id="my_btn" class="btn rounded-circle py-3 px-3" value="Search">
+                        <input type="button" id="my_btn" class="btn py-3 px-3" value="Search">
                    
   
                </div>
@@ -324,9 +278,7 @@
               <!--do not use div end-->
               
             </div>
-
-
-
+            
             <!-- flights tab working end-->
       
             </div>
@@ -352,95 +304,58 @@
                     </div>
     
                   </div>
-    
+
+
+
+
+
+
+                
     
                   <!-- col second -->
-                <div class="col-lg-5  d-flex align-items-center">
+                 <div class="col-lg-5  col-md-3 d-flex justify-content-around">
     
-                  <div class="mx-1">
-                    <input type="date" class="form-control"name="dateto">
+                  <div>
+                    <input type="date" class="form-control" name="dateto">
                   </div>
     
-                  <div class="mx-1">
+                  <div>
                     <input type="date" class="form-control"name="datefrom">
                   </div>
-                <div>
-                     
-    
-    
-                    <!--dropdown start [PASSANGER]-->
-    
-                    <div class="dropdown ">
-                      <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                       <i class="bi bi-people-fill"></i>1-Pessanger
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>2-Pessanger
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>3-Pessanger
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>4-Pessanger
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>5-Pessanger
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>6-Pessanger
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>7-Pessanger
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>8-Pessanger
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>9-Pessanger
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>10-Pessanger
-                          </a>
-                        </li>
-                      </ul>
-                    </div>  
-                    <!--dropdown end -->
-    
-                    <!-- origin/destination/date end-->
-    
-    
-                  </div>
+                
+                      <!--dropdown start [PASSANGER]-->
+           
+                  <div>
+                   <select class="form-select form-select-md" >
+                    <option value="1">1-Pessanger</option>
+                    <option value="2">2-Pessanger</option>
+                    <option value="3">3-Pessanger</option>
+                    <option value="4">4-Pessanger</option>
+                    <option value="5">5-Pessanger</option>
+                    <option value="6">6-Pessanger</option>
+                    <option value="7">7-Pessanger</option>
+                    <option value="8">8-Pessanger</option>
+                    <option value="9">9-Pessanger</option>
+                    <option value="10">10-Pessanger</option>
+                  </select>
                 </div>
-    
-                 <!-- col third -->
-                 <div class="col-lg-2">
-                      
-                          <input type="button" id="my_btn" class="btn rounded-circle py-3 px-3" value="Search">
-                     
-    
+                <!--dropdown end -->
+
+                <!-- origin/destination/date end-->
                  </div>
-              </div>
-    
-    
+
+
+
+
+
+
+
+             <!-- col third -->
+             <div class="col-lg-2">
+                    <input type="button" id="my_btn" class="btn py-3 px-3" value="Search">
+             </div>
+          </div>
+
               <!--THIRD ROW-->
               <div class="row py-2 text-white">
                 <div class="col-lg-10 col-md-6 d-flex align-items-center">
@@ -517,7 +432,7 @@
     
     
     
-                  <div class="col-lg-5  d-flex justify-content-between align-items-center">
+                  <div class="col-lg-5 bg-primary d-flex justify-content-between align-items-center">
                     <div>
                       <input type="text" class="form-control" name="origin_city" placeholder="Enter origin city">
                     </div>
@@ -534,97 +449,55 @@
     
     
                   <!-- col second -->
-                <div class="col-lg-5  d-flex align-items-center">
+                <div class="col-lg-6 bg-secondary d-flex align-items-center px-0">
     
-                  <div class="mx-1">
+                  <div class="mx-3">
                     <input type="date" class="form-control"name="dateto">
                   </div>
     
-                  <div class="mx-1">
+                  <div class="mx-3">
                     <input type="date" class="form-control"name="datefrom">
                   </div>
                 <div>
                      
     
-    
-                    <!--dropdown start [PASSANGER]-->
-    
-                    <div class="dropdown ">
-                      <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                       <i class="bi bi-people-fill"></i>1-Pessanger
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>2-Pessanger
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>3-Pessanger
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>4-Pessanger
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>5-Pessanger
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>6-Pessanger
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>7-Pessanger
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>8-Pessanger
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>9-Pessanger
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="bi bi-people-fill"></i>10-Pessanger
-                          </a>
-                        </li>
-                      </ul>
-                    </div>  
-                    <!--dropdown end -->
-    
-                    <!-- origin/destination/date end-->
-    
-    
-                  </div>
-                </div>
-    
-                 <!-- col third -->
-                 <div class="col-lg-2">
-                      
-                          <input type="button" id="my_btn" class="btn rounded-circle py-3 px-3" value="Search">
-                     
-    
-                 </div>
-              </div>
-    
-    
+      <!--dropdown start [PASSANGER]-->
+                  
+      <select class="form-select form-select-md mx-2 px-2" >
+        <option value="1">1-Pessanger</option>
+        <option value="2">2-Pessanger</option>
+        <option value="3">3-Pessanger</option>
+        <option value="4">4-Pessanger</option>
+        <option value="5">5-Pessanger</option>
+        <option value="6">6-Pessanger</option>
+        <option value="7">7-Pessanger</option>
+        <option value="8">8-Pessanger</option>
+        <option value="9">9-Pessanger</option>
+        <option value="10">10-Pessanger</option>
+      </select>
+
+    <!--dropdown end -->
+
+    <!-- origin/destination/date end-->
+
+
+  </div>
+  <!-- <input type="button" id="my_btn" class="btn py-3 px-3" value="Search"> -->
+</div>
+
+ <!-- col third -->
+ <div class="col-lg-1 bg-black px-1 py-0">
+      
+          <input type="button" id="my_btn" class="btn py-3 px-3" value="Search">
+     
+
+ </div>
+</div>
+
               <!--THIRD ROW-->
               <div class="row py-2 text-white">
                 <div class="col-lg-10 col-md-6 d-flex align-items-center">
                    <!--dropdown start [TRIP TYPE]-->
-    
                    <div class="dropdown ">
                     <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <i class="bi bi-bookmarks"></i>
@@ -643,12 +516,10 @@
                         </a>
                       </li>
                     </ul>
-                  </div>  
-    
+                  </div> 
                   <!--dropdown end -->
     
                    <!--dropdown start [TICKET CLASS]-->
-    
                    <div class="dropdown ">
                     <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <i class="bi bi-journal-bookmark-fill"></i>
@@ -667,9 +538,8 @@
                       </li>
                     </ul>
                   </div>  
-    
                   <!--dropdown end -->
-    
+
                   <!--checkbox start-->
                   <div class="py-2 mx-3 " id="check">
                     <input type="checkbox" name="" class="form-control-check" style="font-weight: 400;"> Direct flights only
@@ -679,37 +549,23 @@
                   </div>
                    <!--checkbox end-->
                 </div>
-    
                 <!--do not use div start-->
                 <div class="col-lg-2">
                 </div>
                 <!--do not use div end-->
-                
-              </div>
-            
+                </div>
             <!-- Cars tab working end-->
               </div>
-             
             </div>
-
            <!-- BUTTON PILLS TAB END-->
-           
           </div>
-
-          
-        
-
         </div>
-
       </div>
     </div>
-
   </section>
-
-
   <!--HOME SECTION END-->
-<!--FUN SECTION START-->
 
+<!--FUN SECTION START-->
 <section id="fun_section">
 <div class="container">
   <div class="row text-white py-5 text-center ">
@@ -757,26 +613,9 @@
         <h5 class="text-secondary fw-semibold">JUNGLE DISTANCE</h5>
       </div>
     </div>
-
-  
-
-  <!-- <div class="row text-white text-center bg-dark PY-5"> -->
-   
- </div>
-  
+  </div> 
 </div>
-
-
-
-
-
 </section>
-
-
-
-
-
-
 <!--FUN SECTION END-->
 
 

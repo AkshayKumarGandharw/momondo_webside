@@ -21,6 +21,16 @@ header .container-lg ul li a:hover{
 }
 #myform ul li a{
 
+    color:white;
+  }
+
+#myform ul #drowpdown_div {
+
+    margin-left:900px;
+    
+}
+#myform ul #drowpdown_div a{
+
     color:black;
     
 }
@@ -28,15 +38,12 @@ header .container-lg ul li a:hover{
 
 /*HOME SECTION START*/
 
-
 #home_section{
 
     height:615px;
     background: url(../img/background\ heart.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
-    
-
 }
 
 #home_section .container .row .col {
@@ -50,11 +57,7 @@ header .container-lg ul li a:hover{
     
 
 }
-#home_section .container .row .col{
 
-   
-    
-}
 
 /* BUTTON PILLS TAB START */
 
@@ -64,8 +67,7 @@ header .container-lg ul li a:hover{
 } */
  #home_section .container .row .row ul li {
 
-    
-    color:white;
+        color:white;
 } 
 #home_section .container .row  .row ul li :hover{
 
@@ -89,13 +91,13 @@ header .container-lg ul li a:hover{
 
 
 
-#home_section .row .col-lg-2 #my_btn  {
+#home_section .row .col-lg-1 #my_btn  {
 
-    
     background-color:#FF2D45;
-    color:white;
-    margin-left:50px;
+    color:white;  
     padding:15px;
+    align-items:center;
+    border-radius:50%;
     
 }
 /*Button search end*/
@@ -129,3 +131,48 @@ header .container-lg ul li a:hover{
 /*FUN SECTION END*/
 
 
+
+/*Responsive web page start*/
+@media screen and (max-width:1199px)
+{
+    #home_section .row .col-lg-6 #my_btn{
+
+        padding:20px;
+    }
+
+
+}
+
+
+@media screen and (max-width:991px)
+{
+    #home_section .row .col-md-3 #my_btn  {
+
+        background-color:#FF2D45;
+        color:white;  
+        padding:15px;
+        align-items:center;
+    }
+    #home_section .container .row .col-lg-5{
+        
+        padding:10px;
+    }
+    #home_section .container .row .col-lg-5 {
+
+        padding:10px;
+    }
+    #home_section .container .row .col-lg-2{
+
+        padding:10px;
+    }
+}
+
+@media screen and (max-width:767px)
+{
+
+    
+
+}
+
+
+/*Responsive web page end*/
