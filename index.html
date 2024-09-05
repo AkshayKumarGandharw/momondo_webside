@@ -103,85 +103,73 @@
   <!--HEADER SECTION END-->
   <!--HOME SECTION START-->
   <section id="home_section">
-    <div class="container ">
+    <div class="container py-3">
       <div class="row">
 
-        <div class="col py-5">
-          <!--content start-->
-          <h1 class="display-5 my-text">"the best place to find <br> the cheapest airfares"</h1>
-          <h3 class="fw-bold"> - every single time</h3>
-
-          <!--content end-->
-        </div>
-
+<!--content start-->
+         <div class="col py-5">
+          
+                <h1 class="display-5 my-text">"the best place to find <br> the cheapest airfares"</h1>
+                <h3 class="fw-bold"> - every single time</h3>
+         </div>
+<!--content end-->
       </div>
 
-      <div class="row bg-purple my-5" id="my_button_tab">
-
-        <div class="col-lg-12 ">
-
-          <!--FIRST ROW-->
+    <div class="row bg-purple" id="my_button_tab">
+      <div class="col-lg-12 ">
+<!--FIRST ROW-->
           <div class="row mx-1 d-flex align-items-center ">
-
-           <!--BUTTON PILLS TAB START-->
-
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-              <li class="nav-item " role="presentation">
-                <button class="nav-link text-white active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" 
-                type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-                <i class="bi bi-airplane-engines-fill"></i>&nbsp Flights</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link text-white" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                 type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                 <i class="bi bi-building-fill"></i>&nbsp Hotels</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link text-white" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                 type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-                 <i class="bi bi-bicycle"></i>&nbsp Cars</button>
-              </li>
-              
+            <!--BUTTON PILLS TAB START-->
+              <ul class="nav nav-pills " id="pills-tab" role="tablist">
+                  <li class="nav-item " role="presentation">
+                      <button class="nav-link text-white" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" 
+                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                        <i class="bi bi-airplane-engines-fill"></i>&nbsp Flights</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link text-white" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                        <i class="bi bi-building-fill"></i>&nbsp Hotels</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link text-white" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                        <i class="bi bi-bicycle"></i>&nbsp Cars</button>
+                  </li>
             </ul>
+
             <div class="tab-content " id="pills-tabContent">
               <div class="tab-pane fade show .active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" 
-              tabindex="0"> 
-            <!-- flights tab working start-->
-            <div class="row py-0 my-0" >
-              <!-- col first -->
-  
-  
-  
-                <div class="col-lg-5 col-md-3   d-flex justify-content-between align-items-center">
-                  <div>
-                    <input type="text" class="form-control" name="origin_city" placeholder="Enter origin city">
-                  </div>
-  
-                  <div class="py-2">
-                    <i class="bi bi-arrow-left-right text-white align-items-center"></i>
-                  </div>
-  
-                  <div>
-                   <input type="text" class="form-control"name="destination_city" placeholder="Enter destination city">
-                  </div>
-  
-                </div>
-  
-  
+                tabindex="0"> 
+ <!-- flights tab working start-->
+  <!--SECOND ROW START--> <div class="row py-0 my-0" >
+                     <!-- col first -->
+                      <div class="col-lg-5 d-flex justify-content-between align-items-center">
+                           <div>
+                             <input type="text" class="form-control" name="origin_city" placeholder="Enter origin city">
+                           </div>
+
+                          <div class="py-2">
+                              <i class="bi bi-arrow-left-right text-white align-items-center"></i>
+                          </div>
+
+                          <div>
+                              <input type="text" class="form-control"name="destination_city" placeholder="Enter destination city">
+                          </div>
+                      </div>
                 <!-- col second -->
-              <div class="col-lg-6 col-md-mt-4 d-flex align-items-center">
-  
-                <div class="mx-1">
-                  <input type="date" class="form-control"name="dateto">
-                </div>
-  
-                <div class="mx-1">
-                  <input type="date" class="form-control"name="datefrom">
-                </div>
-              <div>
-                  <!--dropdown start [PASSANGER]-->
-                  
-                   <select class="form-select form-select-md" >
+                <div class="col-lg-5 d-flex justify-content-between align-items-center">
+                    <div >
+                       <input type="date" class="form-control"name="dateto">
+                    </div>
+
+                    <div >
+                         <input type="date" class="form-control"name="datefrom">
+                    </div>
+                
+            <!--dropdown start [PASSANGER]-->
+                  <div>
+                    <select class="form-select form-select-md" >
                       <option value="1">1-Pessanger</option>
                       <option value="2">2-Pessanger</option>
                       <option value="3">3-Pessanger</option>
@@ -193,95 +181,76 @@
                       <option value="9">9-Pessanger</option>
                       <option value="10">10-Pessanger</option>
                     </select>
+                </div>
+          <!--dropdown end -->
+          <!-- origin/destination/date end-->
+            </div>
+          <!-- col third -->
+               <div class="col-lg-2 d-flex justify-content-between align-items-center">
+                    <input type="button" id="my_btn" class="btn " value="Search">
+              </div>
+<!--SECOND ROW END--></div>
 
-                  <!--dropdown end -->
-  
-                  <!-- origin/destination/date end-->
-  
-  
-                </div>
+<!--THIRD ROW START--><div class="row py-2 text-white">
+     <!-- COL 5 START-->  <div class="col-lg-5 d-flex align-items-center justify-content-between">
+                          <!--dropdown start [TRIP TYPE]-->
+                            <div class="dropdown ">
+                                 <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="bi bi-bookmarks"></i>
+                                      Trip type: Return trip
+                                 </a>
+                          <ul class="dropdown-menu">
+                              <li>
+                                  <a class="dropdown-item" href="#">
+                                  <!--create dropdown option-->
+                                  </a>
+                              </li>
+                              <li>
+                                  <a class="dropdown-item" href="#">
+                                  <!--create dropdown option-->
+                                  </a>
+                              </li>
+                           </ul>
+    <!--dropdown end --> </div> 
+               <!--dropdown start [TICKET CLASS]-->
+               
+                   <div class="dropdown ">
+                      <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="bi bi-journal-bookmark-fill"></i>
+                           Ticket class: Economy
+                     </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#">
+                          <!--create dropdown option-->
+                          </a>
+                       </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                            <!--create dropdown option-->
+                            </a>
+                        </li>
+                    </ul>
+ <!--dropdown end --> </div> 
+  <!-- COL 5 END--></div>
+              <!--checkbox start-->
+ <!-- COL 5 START--> <div class="col-lg-5 d-flex align-items-center">
+              <div class="check1" id="check">
+                <input type="checkbox" name="" class="form-control-check"> Direct flights only
               </div>
-  
-               <!-- col third -->
-               <div class="col-lg-1 col-md-3">
-                    
-                        <input type="button" id="my_btn" class="btn py-3 px-3" value="Search">
-                   
-  
-               </div>
+              <div class=" check2" id="check">
+                <input type="checkbox" name="" class="form-control-check"> Includes nearby airports
+              </div>
+               <!--checkbox end-->
+<!-- COL 5 END-->  </div>
+            <!--do not use div start-->
+            <div class="col-lg-2">
             </div>
-  
-  
-            <!--THIRD ROW-->
-            <div class="row py-2 text-white">
-              <div class="col-lg-10 col-md-6 d-flex align-items-center">
-                 <!--dropdown start [TRIP TYPE]-->
-  
-                 <div class="dropdown ">
-                  <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="bi bi-bookmarks"></i>
-                    Trip type: Return trip
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <!--create dropdown option-->
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                       
-                        <!--create dropdown option-->
-                      </a>
-                    </li>
-                  </ul>
-                </div>  
-  
-                <!--dropdown end -->
-  
-                 <!--dropdown start [TICKET CLASS]-->
-  
-                 <div class="dropdown ">
-                  <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="bi bi-journal-bookmark-fill"></i>
-                    Ticket class: Economy
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <!--create dropdown option-->
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                         <!--create dropdown option-->
-                      </a>
-                    </li>
-                  </ul>
-                </div>  
-  
-                <!--dropdown end -->
-  
-                <!--checkbox start-->
-                <div class="py-2 mx-3 " id="check">
-                  <input type="checkbox" name="" class="form-control-check" style="font-weight: 400;"> Direct flights only
-                </div>
-                <div class="py-2" id="check">
-                  <input type="checkbox" name="" class="form-control-check"> Direct flights only
-                </div>
-                 <!--checkbox end-->
-              </div>
-  
-              <!--do not use div start-->
-              <div class="col-lg-2">
-              </div>
-              <!--do not use div end-->
-              
-            </div>
-            
-            <!-- flights tab working end-->
+            <!--do not use div end-->
+<!--THIRD ROW END--></div>
+ <!-- flights tab working end-->
       </div>
-
+</div>
 
 
               <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
@@ -289,139 +258,112 @@
                <!-- hotels tab working start-->
                <div class="row py-0 my-0">
                 <!-- col first -->
-  
-                  <div class="col-lg-5  d-flex justify-content-between align-items-center">
-                    <div>
-                      <input type="text" class="form-control" name="origin_city" placeholder="Enter origin city">
-                    </div>
-    
-                    <div class="py-2">
-                      <i class="bi bi-arrow-left-right text-white align-items-center"></i>
-                    </div>
-    
-                    <div>
-                     <input type="text" class="form-control"name="destination_city" placeholder="Enter destination city">
-                    </div>
-    
-                  </div>
+    <!--SECOND ROW START--> <div class="row py-0 my-0" >
+                     <!-- col first -->
+                     <div class="col-lg-5 d-flex justify-content-between align-items-center">
+                      <div>
+                        <input type="text" class="form-control" name="origin_city" placeholder="Enter origin city">
+                      </div>
 
+                     <div class="py-2">
+                         <i class="bi bi-arrow-left-right text-white align-items-center"></i>
+                     </div>
 
-
-
-
-
-                
-    
-                  <!-- col second -->
-                 <div class="col-lg-5 d-flex justify-content-around">
-    
-                  <div class="bg-black">
-                    <input type="date" class="form-control" name="dateto">
-                  </div>
-    
-                  <div class="bg-purple">
-                    <input type="date" class="form-control"name="datefrom">
-                  </div>
-                
-                      <!--dropdown start [PASSANGER]-->
-           
-                  <div class="bg-primary">
-                   <select class="form-select form-select-md" >
-                    <option value="1">1-Pessanger</option>
-                    <option value="2">2-Pessanger</option>
-                    <option value="3">3-Pessanger</option>
-                    <option value="4">4-Pessanger</option>
-                    <option value="5">5-Pessanger</option>
-                    <option value="6">6-Pessanger</option>
-                    <option value="7">7-Pessanger</option>
-                    <option value="8">8-Pessanger</option>
-                    <option value="9">9-Pessanger</option>
-                    <option value="10">10-Pessanger</option>
-                  </select>
-                </div>
-                <!--dropdown end -->
-
-                <!-- origin/destination/date end-->
+                     <div>
+                         <input type="text" class="form-control"name="destination_city" placeholder="Enter destination city">
+                     </div>
                  </div>
+           <!-- col second -->
+           <div class="col-lg-5 d-flex justify-content-between align-items-center">
+               <div >
+                  <input type="date" class="form-control"name="dateto">
+               </div>
 
+               <div >
+                    <input type="date" class="form-control"name="datefrom">
+               </div>
+           
+       <!--dropdown start [PASSANGER]-->
+             <div>
+               <select class="form-select form-select-md" >
+                 <option value="1">1-Pessanger</option>
+                 <option value="2">2-Pessanger</option>
+                 <option value="3">3-Pessanger</option>
+                 <option value="4">4-Pessanger</option>
+                 <option value="5">5-Pessanger</option>
+                 <option value="6">6-Pessanger</option>
+                 <option value="7">7-Pessanger</option>
+                 <option value="8">8-Pessanger</option>
+                 <option value="9">9-Pessanger</option>
+                 <option value="10">10-Pessanger</option>
+               </select>
+           </div>
+     <!--dropdown end -->
+     <!-- origin/destination/date end-->
+       </div>
+     <!-- col third -->
+          <div class="col-lg-2 d-flex justify-content-between align-items-center">
+               <input type="button" id="my_btn" class="btn " value="Search">
+         </div>
+<!--SECOND ROW END--></div>
 
-
-
-
-
-
-             <!-- col third -->
-             <div class="col-lg-2">
-                    <input type="button" id="my_btn" class="btn py-3 px-3" value="Search">
-             </div>
-          </div>
-
-              <!--THIRD ROW-->
-              <div class="row py-2 text-white">
-                <div class="col-lg-10 col-md-6 d-flex align-items-center">
-                   <!--dropdown start [TRIP TYPE]-->
-    
-                   <div class="dropdown ">
-                    <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="bi bi-bookmarks"></i>
-                      Trip type: Return trip
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <!--create dropdown option-->
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                         
-                          <!--create dropdown option-->
-                        </a>
-                      </li>
-                    </ul>
-                  </div>  
-    
-                  <!--dropdown end -->
-    
-                   <!--dropdown start [TICKET CLASS]-->
-    
-                   <div class="dropdown ">
-                    <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="bi bi-journal-bookmark-fill"></i>
+<!--THIRD ROW START--><div class="row py-2 text-white">
+<!-- COL 5 START-->  <div class="col-lg-5 d-flex align-items-center justify-content-between">
+                     <!--dropdown start [TRIP TYPE]-->
+                       <div class="dropdown ">
+                            <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <i class="bi bi-bookmarks"></i>
+                                 Trip type: Return trip
+                            </a>
+                     <ul class="dropdown-menu">
+                         <li>
+                             <a class="dropdown-item" href="#">
+                             <!--create dropdown option-->
+                             </a>
+                         </li>
+                         <li>
+                             <a class="dropdown-item" href="#">
+                             <!--create dropdown option-->
+                             </a>
+                         </li>
+                      </ul>
+<!--dropdown end --> </div> 
+          <!--dropdown start [TICKET CLASS]-->
+          
+              <div class="dropdown ">
+                 <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     <i class="bi bi-journal-bookmark-fill"></i>
                       Ticket class: Economy
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <!--create dropdown option-->
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                           <!--create dropdown option-->
-                        </a>
-                      </li>
-                    </ul>
-                  </div>  
-    
-                  <!--dropdown end -->
-    
-                  <!--checkbox start-->
-                  <div class="py-2 mx-3 " id="check">
-                    <input type="checkbox" name="" class="form-control-check" style="font-weight: 400;"> Direct flights only
-                  </div>
-                  <div class="py-2" id="check">
-                    <input type="checkbox" name="" class="form-control-check"> Direct flights only
-                  </div>
-                   <!--checkbox end-->
-                </div>
-    
-                <!--do not use div start-->
-                <div class="col-lg-2">
-                </div>
-                <!--do not use div end-->
-                
-              </div>         
+                </a>
+               <ul class="dropdown-menu">
+                   <li>
+                     <a class="dropdown-item" href="#">
+                     <!--create dropdown option-->
+                     </a>
+                  </li>
+                   <li>
+                       <a class="dropdown-item" href="#">
+                       <!--create dropdown option-->
+                       </a>
+                   </li>
+               </ul>
+<!--dropdown end --> </div> 
+<!-- COL 5 END--></div>
+         <!--checkbox start-->
+<!-- COL 5 START--> <div class="col-lg-5 d-flex align-items-center">
+         <div class="check1" id="check">
+           <input type="checkbox" name="" class="form-control-check"> Direct flights only
+         </div>
+         <div class=" check2" id="check">
+           <input type="checkbox" name="" class="form-control-check"> Includes nearby airports
+         </div>
+          <!--checkbox end-->
+<!-- COL 5 END-->  </div>
+       <!--do not use div start-->
+       <div class="col-lg-2">
+       </div>
+       <!--do not use div end-->
+<!--THIRD ROW END--></div>
                 <!-- hotels tab working end-->
                </div>
               <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" 
@@ -430,130 +372,112 @@
               <div class="row py-0 my-0">
                 <!-- col first -->
     
-    
-    
-                  <div class="col-lg-5 bg-primary d-flex justify-content-between align-items-center">
-                    <div>
-                      <input type="text" class="form-control" name="origin_city" placeholder="Enter origin city">
-                    </div>
-    
-                    <div class="py-2">
-                      <i class="bi bi-arrow-left-right text-white align-items-center"></i>
-                    </div>
-    
-                    <div>
-                     <input type="text" class="form-control"name="destination_city" placeholder="Enter destination city">
-                    </div>
-    
-                  </div>
-    
-    
-                  <!-- col second -->
-                <div class="col-lg-6 bg-secondary d-flex align-items-center px-0">
-    
-                  <div class="mx-3">
-                    <input type="date" class="form-control"name="dateto">
-                  </div>
-    
-                  <div class="mx-3">
+   <!--SECOND ROW START--> <div class="row py-0 my-0" >
+                     <!-- col first -->
+                     <div class="col-lg-5 d-flex justify-content-between align-items-center">
+                      <div>
+                        <input type="text" class="form-control" name="origin_city" placeholder="Enter origin city">
+                      </div>
+
+                     <div class="py-2">
+                         <i class="bi bi-arrow-left-right text-white align-items-center"></i>
+                     </div>
+
+                     <div>
+                         <input type="text" class="form-control"name="destination_city" placeholder="Enter destination city">
+                     </div>
+                 </div>
+           <!-- col second -->
+           <div class="col-lg-5 d-flex justify-content-between align-items-center">
+               <div >
+                  <input type="date" class="form-control"name="dateto">
+               </div>
+
+               <div >
                     <input type="date" class="form-control"name="datefrom">
-                  </div>
-                <div>
-                     
-    
-      <!--dropdown start [PASSANGER]-->
-                  
-      <select class="form-select form-select-md mx-2 px-2" >
-        <option value="1">1-Pessanger</option>
-        <option value="2">2-Pessanger</option>
-        <option value="3">3-Pessanger</option>
-        <option value="4">4-Pessanger</option>
-        <option value="5">5-Pessanger</option>
-        <option value="6">6-Pessanger</option>
-        <option value="7">7-Pessanger</option>
-        <option value="8">8-Pessanger</option>
-        <option value="9">9-Pessanger</option>
-        <option value="10">10-Pessanger</option>
-      </select>
+               </div>
+           
+       <!--dropdown start [PASSANGER]-->
+             <div>
+               <select class="form-select form-select-md" >
+                 <option value="1">1-Pessanger</option>
+                 <option value="2">2-Pessanger</option>
+                 <option value="3">3-Pessanger</option>
+                 <option value="4">4-Pessanger</option>
+                 <option value="5">5-Pessanger</option>
+                 <option value="6">6-Pessanger</option>
+                 <option value="7">7-Pessanger</option>
+                 <option value="8">8-Pessanger</option>
+                 <option value="9">9-Pessanger</option>
+                 <option value="10">10-Pessanger</option>
+               </select>
+           </div>
+     <!--dropdown end -->
+     <!-- origin/destination/date end-->
+       </div>
+     <!-- col third -->
+          <div class="col-lg-2 d-flex justify-content-between align-items-center">
+               <input type="button" id="my_btn" class="btn " value="Search">
+         </div>
+<!--SECOND ROW END--></div>
 
-    <!--dropdown end -->
-
-    <!-- origin/destination/date end-->
-
-
-  </div>
-  <!-- <input type="button" id="my_btn" class="btn py-3 px-3" value="Search"> -->
-</div>
-
- <!-- col third -->
- <div class="col-lg-1 bg-black px-1 py-0">
-      
-          <input type="button" id="my_btn" class="btn py-3 px-3" value="Search">
-     
-
- </div>
-</div>
-
-              <!--THIRD ROW-->
-              <div class="row py-2 text-white">
-                <div class="col-lg-10 col-md-6 d-flex align-items-center">
-                   <!--dropdown start [TRIP TYPE]-->
-                   <div class="dropdown ">
-                    <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="bi bi-bookmarks"></i>
-                      Trip type: Return trip
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <!--create dropdown option-->
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                         
-                          <!--create dropdown option-->
-                        </a>
-                      </li>
-                    </ul>
-                  </div> 
-                  <!--dropdown end -->
-    
-                   <!--dropdown start [TICKET CLASS]-->
-                   <div class="dropdown ">
-                    <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="bi bi-journal-bookmark-fill"></i>
+<!--THIRD ROW START--><div class="row py-2 text-white">
+<!-- COL 5 START-->  <div class="col-lg-5 d-flex align-items-center justify-content-between">
+                     <!--dropdown start [TRIP TYPE]-->
+                       <div class="dropdown ">
+                            <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <i class="bi bi-bookmarks"></i>
+                                 Trip type: Return trip
+                            </a>
+                     <ul class="dropdown-menu">
+                         <li>
+                             <a class="dropdown-item" href="#">
+                             <!--create dropdown option-->
+                             </a>
+                         </li>
+                         <li>
+                             <a class="dropdown-item" href="#">
+                             <!--create dropdown option-->
+                             </a>
+                         </li>
+                      </ul>
+<!--dropdown end --> </div> 
+          <!--dropdown start [TICKET CLASS]-->
+          
+              <div class="dropdown ">
+                 <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     <i class="bi bi-journal-bookmark-fill"></i>
                       Ticket class: Economy
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <!--create dropdown option-->
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                           <!--create dropdown option-->
-                        </a>
-                      </li>
-                    </ul>
-                  </div>  
-                  <!--dropdown end -->
-
-                  <!--checkbox start-->
-                  <div class="py-2 mx-3 " id="check">
-                    <input type="checkbox" name="" class="form-control-check" style="font-weight: 400;"> Direct flights only
-                  </div>
-                  <div class="py-2" id="check">
-                    <input type="checkbox" name="" class="form-control-check"> Direct flights only
-                  </div>
-                   <!--checkbox end-->
-                </div>
-                <!--do not use div start-->
-                <div class="col-lg-2">
-                </div>
-                <!--do not use div end-->
-                </div>
+                </a>
+               <ul class="dropdown-menu">
+                   <li>
+                     <a class="dropdown-item" href="#">
+                     <!--create dropdown option-->
+                     </a>
+                  </li>
+                   <li>
+                       <a class="dropdown-item" href="#">
+                       <!--create dropdown option-->
+                       </a>
+                   </li>
+               </ul>
+<!--dropdown end --> </div> 
+<!-- COL 5 END--></div>
+         <!--checkbox start-->
+<!-- COL 5 START--> <div class="col-lg-5 d-flex align-items-center">
+         <div class="check1" id="check">
+           <input type="checkbox" name="" class="form-control-check"> Direct flights only
+         </div>
+         <div class=" check2" id="check">
+           <input type="checkbox" name="" class="form-control-check"> Includes nearby airports
+         </div>
+          <!--checkbox end-->
+<!-- COL 5 END-->  </div>
+       <!--do not use div start-->
+       <div class="col-lg-2">
+       </div>
+       <!--do not use div end-->
+<!--THIRD ROW END--></div>
             <!-- Cars tab working end-->
               </div>
             </div>
@@ -568,7 +492,7 @@
 <!--FUN SECTION START-->
 <section id="fun_section">
 <div class="container">
-  <div class="row text-white py-5 text-center ">
+  <div class="row text-white py-5 text-center">
     <h2 class="fw-semibold fs-2 ">SOME FUN WE COVERED</h2>
    
     <div class="col">

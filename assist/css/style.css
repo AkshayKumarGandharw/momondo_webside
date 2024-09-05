@@ -27,12 +27,10 @@ header .container-lg ul li a:hover{
 #myform ul #drowpdown_div {
 
     margin-left:900px;
-    
 }
 #myform ul #drowpdown_div a{
 
-    color:black;
-    
+    color:black;    
 }
 /*HEADER SECTION END*/
 
@@ -40,12 +38,12 @@ header .container-lg ul li a:hover{
 
 #home_section{
 
-    height:615px;
-    background: url(../img/background\ heart.jpg) no-repeat;
+    /* width:100%; */
+    /* height:100%; */
+    background: url(../img/background\ heart.jpg)  no-repeat;
     background-size: cover;
     background-position: center center;
 }
-
 #home_section .container .row .col {
 
     margin:60px auto 60px 40px;
@@ -54,17 +52,11 @@ header .container-lg ul li a:hover{
 .bg-purple{
 
     background-color:#5C327A;
-    
-
 }
 
 
 /* BUTTON PILLS TAB START */
 
-/* #home_section .container .row .row ul li {
-    background-color:#FF2D45;
-    color:white;
-} */
  #home_section .container .row .row ul li {
 
         color:white;
@@ -82,39 +74,44 @@ header .container-lg ul li a:hover{
 
 #check {
 
-    font-size:12px;
+    font-size:16px;
+    font-weight:600px;
+    
 }
+
+#home_section .container .row .col-lg-5 .check1{
+
+    margin-left:5px;
+}
+#home_section .container .row .col-lg-5 .check2{
+
+    margin-left:98px;
+} 
 
 /*checkbox end */
 
 /*Button search start*/
 
-
-
-#home_section .row .col-lg-1 #my_btn  {
+#home_section .row .col-lg-2 #my_btn  {
 
     background-color:#FF2D45;
     color:white;  
     padding:15px;
-    align-items:center;
     border-radius:50%;
+    margin-left:30px;
+    font-size:18px;
     
 }
+
 /*Button search end*/
 /*HOME SECTION END*/
 /*FUN SECTION START*/
 
 #fun_section{
-    height:350px;
-    /* margin-top:200px; */
-    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url(../img/fun.jpg) no-repeat ;
+    
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url(../img/background_img.jpg) no-repeat ;
     background:cover;
     background-position:center center;
-}
-
-#fun_section .container .row {
-
-
 }
 #box {
 
@@ -133,46 +130,89 @@ header .container-lg ul li a:hover{
 
 
 /*Responsive web page start*/
+
+
 @media screen and (max-width:1199px)
 {
     #home_section .row .col-lg-6 #my_btn{
 
         padding:20px;
     }
-
-
 }
-
 
 @media screen and (max-width:991px)
 {
-    #home_section .row .col-md-3 #my_btn  {
+    #home_section .row .col-lg-2 #my_btn  {
 
         background-color:#FF2D45;
         color:white;  
-        padding:15px;
-        align-items:center;
+        padding:15px 305px;
+        border-radius: 10px 10px;
+        margin:4px;
+        font-size:18px;
     }
     #home_section .container .row .col-lg-5{
         
         padding:10px;
     }
-    #home_section .container .row .col-lg-5 {
-
-        padding:10px;
-    }
+    
     #home_section .container .row .col-lg-2{
 
         padding:10px;
     }
+    #home_section .container .row .col-lg-5 .check1{
+
+        margin-left:10px;
+    
+    }
+    #home_section .container .row .col-lg-5 .check2{
+    
+         margin-left:315px;
+    }
+    
 }
 
 @media screen and (max-width:767px)
 {
 
-    
+    #home_section .row .col-lg-2 #my_btn  {
 
+        background-color:#FF2D45;
+        color:white;  
+        padding:15px 215px;
+        border-radius: 10px 10px;
+        margin:4px;
+        font-size:18px;
+    }
+    #home_section .container .row .col-lg-5 .check1{
+
+         margin-left:10px;
+
+    }
+    #home_section .container .row .col-lg-5 .check2{
+
+        margin-left:135px;
+    }
+
+    #fun_section{
+        background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url(../img/background_img.jpg) no-repeat ;
+        background:cover;
+        background-position:center center;
+    }
 }
 
+@media screen and (max-width:575px){
 
+    #home_section .container .row .col-lg-5 .check1{
+
+        margin-left:10px;
+    
+    }
+    #home_section .container .row .col-lg-5 .check2{
+    
+            margin-left:170px;
+    }
+    
+}
+ 
 /*Responsive web page end*/
