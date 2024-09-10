@@ -67,7 +67,7 @@
                   
                     <ul class="nav">
                       <li class="nav-item">
-                        <a href="javascript:void()" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" >
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" >
                           <img src="./assist/img/cheap2.png" alt="">
                           English
                         </a>
@@ -103,438 +103,481 @@
   <!--HEADER SECTION END-->
   <!--HOME SECTION START-->
   <section id="home_section">
-    <div class="container py-3">
+    <div class="container-lg px-5 pb-3">
       <div class="row">
-
-<!--content start-->
-         <div class="col py-5">
-          
-                <h1 class="display-5 my-text">"the best place to find <br> the cheapest airfares"</h1>
-                <h3 class="fw-bold py-3"> - every single time</h3>
-         </div>
-<!--content end-->
+        <div class="col py-5">   
+          <h1 class="display-6 my-text">"the best place to find <br> the cheapest airfares"</h1>
+          <h3 class="fw-bold mt-4"> - every single time</h3>
+        </div>
       </div>
 
-    <div class="row bg-purple" id="my_button_tab">
-      <div class="col-lg-12 ">
-<!--FIRST ROW-->
-          <div class="row mx-1 d-flex align-items-center ">
-            <!--BUTTON PILLS TAB START-->
-              <ul class="nav nav-pills " id="pills-tab" role="tablist">
-                  <li class="nav-item " role="presentation">
-                      <button class="nav-link .active text-white" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" 
-                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-                        <i class="bi bi-airplane-engines-fill"></i>&nbsp Flights</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                      <button class="nav-link text-white" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                        <i class="bi bi-building-fill"></i>&nbsp Hotels</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                      <button class="nav-link text-white" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-                        <i class="bi bi-bicycle"></i>&nbsp Cars</button>
-                  </li>
-            </ul>
-
-            <div class="tab-content " id="pills-tabContent">
-              <div class="tab-pane fade show .active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" 
+      <div class="row bg-purple mt-lg-5 mb-2 px-2 text-white pb-2">
+        <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+          <li class="nav-item " role="presentation">
+              <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" 
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <i class="bi bi-airplane-engines-fill"></i>&nbsp Flights</button>
+          </li>
+          <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <i class="bi bi-building-fill"></i>&nbsp Hotels</button>
+          </li>
+          <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                <i class="bi bi-bicycle"></i>&nbsp Cars</button>
+          </li>
+    </ul>
+    <div class="tab-content " id="pills-tabContent">
+      <div class="tab-pane fade show .active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" 
                 tabindex="0"> 
- <!-- flights tab working start-->
-  <!--SECOND ROW START--> <div class="row py-0 my-0" >
-                     <!-- col first -->
-                      <div class="col-lg-5 d-flex justify-content-between align-items-center">
-                           <div>
-                             <input type="text" class="form-control" name="origin_city" placeholder="Enter origin city">
-                           </div>
 
-                          <div class="py-2">
-                              <i class="bi bi-arrow-left-right text-white align-items-center"></i>
-                          </div>
-
-                          <div>
-                              <input type="text" class="form-control"name="destination_city" placeholder="Enter destination city">
-                          </div>
-                      </div>
-                <!-- col second -->
-                <div class="col-lg-5 d-flex justify-content-between align-items-center">
-                    <div >
-                       <input type="date" class="form-control"name="dateto">
+                <div class="row g-2 align-items-center">
+                  <div class="col-md-3 d-flex">
+          
+                        <input type="text" class="form-control" name="origin_city" placeholder="Enter origin city">
+          
+                         <!-- <div class="py-2"> -->
+                           <i class="bi bi-arrow-left-right align-items-center ps-3 pt-1 col-md-3"></i>
+                        <!-- </div> -->
+                  </div>
+                     <div class="col-md-3">
+                         
+                          <input type="text" class="form-control" name="destination_city" placeholder="Enter destination city">
+                       
                     </div>
 
-                    <div >
-                         <input type="date" class="form-control"name="datefrom">
+                    <div class="col-md">
+                      
+                        <input type="date" class="form-control"name="dateto">
+                     
                     </div>
-                
-            <!--dropdown start [PASSANGER]-->
-                  <div>
-                    <select class="form-select form-select-md" >
-                      <option value="1">1-Pessanger</option>
-                      <option value="2">2-Pessanger</option>
-                      <option value="3">3-Pessanger</option>
-                      <option value="4">4-Pessanger</option>
-                      <option value="5">5-Pessanger</option>
-                      <option value="6">6-Pessanger</option>
-                      <option value="7">7-Pessanger</option>
-                      <option value="8">8-Pessanger</option>
-                      <option value="9">9-Pessanger</option>
-                      <option value="10">10-Pessanger</option>
-                    </select>
+                    <div class="col-md">
+                       <!--dropdown start [PASSANGER]-->
+                       
+                       <select class="form-select form-select-md" >
+                         <option value="1">1-Pessanger</option>
+                        <option value="2">2-Pessanger</option>
+                        <option value="3">3-Pessanger</option>
+                        <option value="4">4-Pessanger</option>
+                        <option value="5">5-Pessanger</option>
+                        <option value="6">6-Pessanger</option>
+                        <option value="7">7-Pessanger</option>
+                        <option value="8">8-Pessanger</option>
+                        <option value="9">9-Pessanger</option>
+                        <option value="10">10-Pessanger</option>
+                      </select>
+                      
+                    </div>
+                    <div class="col-md d-flex justify-content-between align-items-center">
+                      <!-- <div class=""> -->
+                        <!-- <input type="button" id="my_btn" class="btn " value="Search"> -->
+                        <a type="button" id="my_btn" class="btn " value="Search">Search</a>
+                      <!-- </div> -->
+                    </div>
                 </div>
-          <!--dropdown end -->
-          <!-- origin/destination/date end-->
-            </div>
-          <!-- col third -->
-               <div class="col-lg-2 d-flex justify-content-between align-items-center">
-                    <input type="button" id="my_btn" class="btn " value="Search">
-              </div>
-<!--SECOND ROW END--></div>
-
-<!--THIRD ROW START--><div class="row py-2 text-white">
-     <!-- COL 5 START-->  <div class="col-lg-5 d-flex align-items-center justify-content-between ">
+                <div class="row">
+                  <div class="col-6 col-lg-3">
+                    
                           <!--dropdown start [TRIP TYPE]-->
-                            <div class="dropdown ">
-                                 <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="bi bi-bookmarks"></i>
-                                      Trip type: Return trip
-                                 </a>
-                          <ul class="dropdown-menu">
-                              <li>
-                                  <a class="dropdown-item" href="#">
-                                  <!--create dropdown option-->
-                                  </a>
-                              </li>
-                              <li>
-                                  <a class="dropdown-item" href="#">
-                                  <!--create dropdown option-->
-                                  </a>
-                              </li>
-                           </ul>
-    <!--dropdown end --> </div> 
-               <!--dropdown start [TICKET CLASS]-->
+                          <div class="dropdown ">
+                            <a class="text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <i class="bi bi-bookmarks"></i>
+                                 Trip type: Return trip
+                            </a>
+                     <ul class="dropdown-menu">
+                         <li>
+                             <a class="dropdown-item" href="#">
+                             <!--create dropdown option-->
+                             </a>
+                         </li>
+                         <li>
+                             <a class="dropdown-item" href="#">
+                             <!--create dropdown option-->
+                             </a>
+                         </li>
+                      </ul>
+<!--dropdown end --> </div> 
+                 </div>
+
+                 <div class="col-6 col-lg-3">
+                   <!--dropdown start [TICKET CLASS]-->
                
                    <div class="dropdown ">
-                      <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          <i class="bi bi-journal-bookmark-fill"></i>
-                           Ticket class: Economy
-                     </a>
-                    <ul class="dropdown-menu">
-                        <li>
+                    <a class="text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-journal-bookmark-fill"></i>
+                         Ticket class: Economy
+                   </a>
+                  <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                        <!--create dropdown option-->
+                        </a>
+                     </li>
+                      <li>
                           <a class="dropdown-item" href="#">
                           <!--create dropdown option-->
                           </a>
-                       </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                            <!--create dropdown option-->
-                            </a>
-                        </li>
-                    </ul>
- <!--dropdown end --> </div> 
-  <!-- COL 5 END--></div>
-              <!--checkbox start-->
- <!-- COL 5 START--> <div class="col-lg-5 d-flex align-items-center">
-              <div class="check1" id="check">
-                <input type="checkbox" name="" class="form-control-check"> Direct flights only
+                      </li>
+                  </ul>
+<!--dropdown end --> </div> 
+                </div>
+ <!--checkbox start-->
+                  <div class="col-6 col-lg-3">
+                    <div class="form-check">
+                     <input type="checkbox" name="" class="form-check-input" id="mycheckid">
+                        <label class="form-check-label" for="mycheckid"> Direct flights only</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3">
+                    <div class="form-check">
+                     <input type="checkbox" name="" class="form-check-input" id="mycheckid">
+                        <label class="form-check-label" for="mycheckid">Include nearby airports</label>
+                    </div>
+                  </div>
+<!--checkbox end-->
+                  </div>
+<!-- /////////////////////////////////////////////// -->
+
+
+
+
+
+<!--  -->
+                </div>
+
+
+
+
+
+
+
+       </div>
+
+<!-- ///////////////////////// -->
+
+<div class="tab-content " id="pills-tabContent">
+  <div class="tab-pane fade show " id="pills-profile" role="tabpanel" aria-labelledby="pills-home-tab" 
+            tabindex="0"> 
+
+            <div class="row g-2 align-items-center">
+              <div class="col-md-3 d-flex">
+      
+                    <input type="text" class="form-control" name="origin_city" placeholder="Enter origin city">
+      
+                     <!-- <div class="py-2"> -->
+                       <i class="bi bi-arrow-left-right align-items-center ps-3 pt-1 col-md-3"></i>
+                    <!-- </div> -->
               </div>
-              <div class=" check2" id="check">
-                <input type="checkbox" name="" class="form-control-check"> Includes nearby airports
-              </div>
-               <!--checkbox end-->
-<!-- COL 5 END-->  </div>
-            <!--do not use div start-->
-            <div class="col-lg-2">
+                 <div class="col-md-3">
+                     
+                      <input type="text" class="form-control" name="destination_city" placeholder="Enter destination city">
+                   
+                </div>
+
+                <div class="col-md">
+                  
+                    <input type="date" class="form-control"name="dateto">
+                 
+                </div>
+                <div class="col-md">
+                   <!--dropdown start [PASSANGER]-->
+                   
+                   <select class="form-select form-select-md" >
+                     <option value="1">1-Pessanger</option>
+                    <option value="2">2-Pessanger</option>
+                    <option value="3">3-Pessanger</option>
+                    <option value="4">4-Pessanger</option>
+                    <option value="5">5-Pessanger</option>
+                    <option value="6">6-Pessanger</option>
+                    <option value="7">7-Pessanger</option>
+                    <option value="8">8-Pessanger</option>
+                    <option value="9">9-Pessanger</option>
+                    <option value="10">10-Pessanger</option>
+                  </select>
+                  
+                </div>
+                <div class="col-md d-flex justify-content-between align-items-center">
+                  <!-- <div class=""> -->
+                    <!-- <input type="button" id="my_btn" class="btn " value="Search"> -->
+                    <a type="button" id="my_btn" class="btn " value="Search">Search</a>
+                  <!-- </div> -->
+                </div>
             </div>
-            <!--do not use div end-->
-<!--THIRD ROW END--></div>
- <!-- flights tab working end-->
-      </div>
-</div>
+            <div class="row">
+              <div class="col-6 col-lg-3">
+                
+                      <!--dropdown start [TRIP TYPE]-->
+                      <div class="dropdown ">
+                        <a class="text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             <i class="bi bi-bookmarks"></i>
+                             Trip type: Return trip
+                        </a>
+                 <ul class="dropdown-menu">
+                     <li>
+                         <a class="dropdown-item" href="#">
+                         <!--create dropdown option-->
+                         </a>
+                     </li>
+                     <li>
+                         <a class="dropdown-item" href="#">
+                         <!--create dropdown option-->
+                         </a>
+                     </li>
+                  </ul>
+<!--dropdown end --> </div> 
+             </div>
 
-
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-               tabindex="0">
-               <!-- hotels tab working start-->
-               <div class="row py-0 my-0">
-                <!-- col first -->
-    <!--SECOND ROW START--> <div class="row py-0 my-0" >
-                     <!-- col first -->
-                     <div class="col-lg-5 d-flex justify-content-between align-items-center">
-                      <div>
-                        <input type="text" class="form-control" name="origin_city" placeholder="Enter origin city">
-                      </div>
-
-                     <div class="py-2">
-                         <i class="bi bi-arrow-left-right text-white align-items-center"></i>
-                     </div>
-
-                     <div>
-                         <input type="text" class="form-control"name="destination_city" placeholder="Enter destination city">
-                     </div>
-                 </div>
-           <!-- col second -->
-           <div class="col-lg-5 d-flex justify-content-between align-items-center">
-               <div >
-                  <input type="date" class="form-control"name="dateto">
-               </div>
-
-               <div >
-                    <input type="date" class="form-control"name="datefrom">
-               </div>
+             <div class="col-6 col-lg-3">
+               <!--dropdown start [TICKET CLASS]-->
            
-       <!--dropdown start [PASSANGER]-->
-             <div>
-               <select class="form-select form-select-md" >
-                 <option value="1">1-Pessanger</option>
-                 <option value="2">2-Pessanger</option>
-                 <option value="3">3-Pessanger</option>
-                 <option value="4">4-Pessanger</option>
-                 <option value="5">5-Pessanger</option>
-                 <option value="6">6-Pessanger</option>
-                 <option value="7">7-Pessanger</option>
-                 <option value="8">8-Pessanger</option>
-                 <option value="9">9-Pessanger</option>
-                 <option value="10">10-Pessanger</option>
-               </select>
-           </div>
-     <!--dropdown end -->
-     <!-- origin/destination/date end-->
-       </div>
-     <!-- col third -->
-          <div class="col-lg-2 d-flex justify-content-between align-items-center">
-               <input type="button" id="my_btn" class="btn " value="Search">
-         </div>
-<!--SECOND ROW END--></div>
-
-<!--THIRD ROW START--><div class="row py-2 text-white">
-<!-- COL 5 START-->  <div class="col-lg-5 d-flex align-items-center justify-content-between">
-                     <!--dropdown start [TRIP TYPE]-->
-                       <div class="dropdown ">
-                            <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                 <i class="bi bi-bookmarks"></i>
-                                 Trip type: Return trip
-                            </a>
-                     <ul class="dropdown-menu">
-                         <li>
-                             <a class="dropdown-item" href="#">
-                             <!--create dropdown option-->
-                             </a>
-                         </li>
-                         <li>
-                             <a class="dropdown-item" href="#">
-                             <!--create dropdown option-->
-                             </a>
-                         </li>
-                      </ul>
-<!--dropdown end --> </div> 
-          <!--dropdown start [TICKET CLASS]-->
-          
-              <div class="dropdown ">
-                 <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                     <i class="bi bi-journal-bookmark-fill"></i>
-                      Ticket class: Economy
-                </a>
-               <ul class="dropdown-menu">
-                   <li>
-                     <a class="dropdown-item" href="#">
-                     <!--create dropdown option-->
-                     </a>
+               <div class="dropdown ">
+                <a class="text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-journal-bookmark-fill"></i>
+                     Ticket class: Economy
+               </a>
+              <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                    <!--create dropdown option-->
+                    </a>
+                 </li>
+                  <li>
+                      <a class="dropdown-item" href="#">
+                      <!--create dropdown option-->
+                      </a>
                   </li>
-                   <li>
-                       <a class="dropdown-item" href="#">
-                       <!--create dropdown option-->
-                       </a>
-                   </li>
-               </ul>
+              </ul>
 <!--dropdown end --> </div> 
-<!-- COL 5 END--></div>
-         <!--checkbox start-->
-<!-- COL 5 START--> <div class="col-lg-5 d-flex align-items-center">
-         <div class="check1" id="check">
-           <input type="checkbox" name="" class="form-control-check"> Direct flights only
-         </div>
-         <div class=" check2" id="check">
-           <input type="checkbox" name="" class="form-control-check"> Includes nearby airports
-         </div>
-          <!--checkbox end-->
-<!-- COL 5 END-->  </div>
-       <!--do not use div start-->
-       <div class="col-lg-2">
-       </div>
-       <!--do not use div end-->
-<!--THIRD ROW END--></div>
-                <!-- hotels tab working end-->
-               </div>
-              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" 
-              tabindex="0">
-              <!-- Cars tab working start-->
-              <div class="row py-0 my-0">
-                <!-- col first -->
-    
-   <!--SECOND ROW START--> <div class="row py-0 my-0" >
-                     <!-- col first -->
-                     <div class="col-lg-5 d-flex justify-content-between align-items-center">
-                      <div>
-                        <input type="text" class="form-control" name="origin_city" placeholder="Enter origin city">
-                      </div>
-
-                     <div class="py-2">
-                         <i class="bi bi-arrow-left-right text-white align-items-center"></i>
-                     </div>
-
-                     <div>
-                         <input type="text" class="form-control"name="destination_city" placeholder="Enter destination city">
-                     </div>
-                 </div>
-           <!-- col second -->
-           <div class="col-lg-5 d-flex justify-content-between align-items-center">
-               <div >
-                  <input type="date" class="form-control"name="dateto">
-               </div>
-
-               <div >
-                    <input type="date" class="form-control"name="datefrom">
-               </div>
-           
-       <!--dropdown start [PASSANGER]-->
-             <div>
-               <select class="form-select form-select-md" >
-                 <option value="1">1-Pessanger</option>
-                 <option value="2">2-Pessanger</option>
-                 <option value="3">3-Pessanger</option>
-                 <option value="4">4-Pessanger</option>
-                 <option value="5">5-Pessanger</option>
-                 <option value="6">6-Pessanger</option>
-                 <option value="7">7-Pessanger</option>
-                 <option value="8">8-Pessanger</option>
-                 <option value="9">9-Pessanger</option>
-                 <option value="10">10-Pessanger</option>
-               </select>
-           </div>
-     <!--dropdown end -->
-     <!-- origin/destination/date end-->
-       </div>
-     <!-- col third -->
-          <div class="col-lg-2 d-flex justify-content-between align-items-center">
-               <input type="button" id="my_btn" class="btn " value="Search">
-         </div>
-<!--SECOND ROW END--></div>
-
-<!--THIRD ROW START--><div class="row py-2 text-white">
-<!-- COL 5 START-->  <div class="col-lg-5 d-flex align-items-center justify-content-between">
-                     <!--dropdown start [TRIP TYPE]-->
-                       <div class="dropdown ">
-                            <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                 <i class="bi bi-bookmarks"></i>
-                                 Trip type: Return trip
-                            </a>
-                     <ul class="dropdown-menu">
-                         <li>
-                             <a class="dropdown-item" href="#">
-                             <!--create dropdown option-->
-                             </a>
-                         </li>
-                         <li>
-                             <a class="dropdown-item" href="#">
-                             <!--create dropdown option-->
-                             </a>
-                         </li>
-                      </ul>
-<!--dropdown end --> </div> 
-          <!--dropdown start [TICKET CLASS]-->
-          
-              <div class="dropdown ">
-                 <a class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                     <i class="bi bi-journal-bookmark-fill"></i>
-                      Ticket class: Economy
-                </a>
-               <ul class="dropdown-menu">
-                   <li>
-                     <a class="dropdown-item" href="#">
-                     <!--create dropdown option-->
-                     </a>
-                  </li>
-                   <li>
-                       <a class="dropdown-item" href="#">
-                       <!--create dropdown option-->
-                       </a>
-                   </li>
-               </ul>
-<!--dropdown end --> </div> 
-<!-- COL 5 END--></div>
-         <!--checkbox start-->
-<!-- COL 5 START--> <div class="col-lg-5 d-flex align-items-center">
-         <div class="check1" id="check">
-           <input type="checkbox" name="" class="form-control-check"> Direct flights only
-         </div>
-         <div class=" check2" id="check">
-           <input type="checkbox" name="" class="form-control-check"> Includes nearby airports
-         </div>
-          <!--checkbox end-->
-<!-- COL 5 END-->  </div>
-       <!--do not use div start-->
-       <div class="col-lg-2">
-       </div>
-       <!--do not use div end-->
-<!--THIRD ROW END--></div>
-            <!-- Cars tab working end-->
-              </div>
             </div>
-           <!-- BUTTON PILLS TAB END-->
-          </div>
-        </div>
-      </div>
+<!--checkbox start-->
+              <div class="col-6 col-lg-3">
+                <div class="form-check">
+                 <input type="checkbox" name="" class="form-check-input" id="mycheckid">
+                    <label class="form-check-label" for="mycheckid"> Direct flights only</label>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="form-check">
+                 <input type="checkbox" name="" class="form-check-input" id="mycheckid">
+                    <label class="form-check-label" for="mycheckid">Include nearby airports</label>
+                </div>
+              </div>
+<!--checkbox end-->
+              </div>
+<!-- /////////////////////////////////////////////// -->
+
+
+
+
+
+<!--  -->
+            </div>
+
+
+
+
+
+
+
+   </div>
+
+
+
+ <!-- ///////////////////////// -->
+
+<!-- ///////////////////////////// -->
+<div class="tab-content " id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-home-tab" 
+            tabindex="0"> 
+
+            <div class="row g-2 align-items-center">
+              <div class="col-md-3 d-flex">
+      
+                    <input type="text" class="form-control" name="origin_city" placeholder="Enter origin city">
+      
+                     <!-- <div class="py-2"> -->
+                       <i class="bi bi-arrow-left-right align-items-center ps-3 pt-1 col-md-3"></i>
+                    <!-- </div> -->
+              </div>
+                 <div class="col-md-3">
+                     
+                      <input type="text" class="form-control" name="destination_city" placeholder="Enter destination city">
+                   
+                </div>
+
+                <div class="col-md">
+                  
+                    <input type="date" class="form-control"name="dateto">
+                 
+                </div>
+                <div class="col-md">
+                   <!--dropdown start [PASSANGER]-->
+                   
+                   <select class="form-select form-select-md" >
+                     <option value="1">1-Pessanger</option>
+                    <option value="2">2-Pessanger</option>
+                    <option value="3">3-Pessanger</option>
+                    <option value="4">4-Pessanger</option>
+                    <option value="5">5-Pessanger</option>
+                    <option value="6">6-Pessanger</option>
+                    <option value="7">7-Pessanger</option>
+                    <option value="8">8-Pessanger</option>
+                    <option value="9">9-Pessanger</option>
+                    <option value="10">10-Pessanger</option>
+                  </select>
+                  
+                </div>
+                <div class="col-md d-flex justify-content-between align-items-center">
+                  <!-- <div class=""> -->
+                    <!-- <input type="button" id="my_btn" class="btn " value="Search"> -->
+                    <a type="button" id="my_btn" class="btn " value="Search">Search</a>
+                  <!-- </div> -->
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-6 col-lg-3">
+                
+                      <!--dropdown start [TRIP TYPE]-->
+                      <div class="dropdown ">
+                        <a class="text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             <i class="bi bi-bookmarks"></i>
+                             Trip type: Return trip
+                        </a>
+                 <ul class="dropdown-menu">
+                     <li>
+                         <a class="dropdown-item" href="#">
+                         <!--create dropdown option-->
+                         </a>
+                     </li>
+                     <li>
+                         <a class="dropdown-item" href="#">
+                         <!--create dropdown option-->
+                         </a>
+                     </li>
+                  </ul>
+<!--dropdown end --> </div> 
+             </div>
+
+             <div class="col-6 col-lg-3">
+               <!--dropdown start [TICKET CLASS]-->
+           
+               <div class="dropdown ">
+                <a class="text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-journal-bookmark-fill"></i>
+                     Ticket class: Economy
+               </a>
+              <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                    <!--create dropdown option-->
+                    </a>
+                 </li>
+                  <li>
+                      <a class="dropdown-item" href="#">
+                      <!--create dropdown option-->
+                      </a>
+                  </li>
+              </ul>
+<!--dropdown end --> </div> 
+            </div>
+<!--checkbox start-->
+              <div class="col-6 col-lg-3">
+                <div class="form-check">
+                 <input type="checkbox" name="" class="form-check-input" id="mycheckid">
+                    <label class="form-check-label" for="mycheckid"> Direct flights only</label>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="form-check">
+                 <input type="checkbox" name="" class="form-check-input" id="mycheckid">
+                    <label class="form-check-label" for="mycheckid">Include nearby airports</label>
+                </div>
+              </div>
+<!--checkbox end-->
+              </div>
+<!-- /////////////////////////////////////////////// -->
+
+
+
+
+
+<!--  -->
+            </div>
+
+
+
+
+
+
+
+   </div>
+
+ <!-- //////////////////////////// -->
+
+
+
+
+
+     </div>
+
+
+
+      
     </div>
   </section>
   <!--HOME SECTION END-->
 
 <!--FUN SECTION START-->
 <section id="fun_section">
-<div class="container py-5">
-  <div class="row text-white text-center">
-    <h2 class="fw-semibold fs-2 ">SOME FUN WE COVERED</h2>
+  
+<div class="container-lg py-5 text-white text-center">
+  <h2 class="fw-semibold fs-2 ">SOME FUN WE COVERED</h2>
+  <div class="row row-cols-lg-6 row-cols-md-3 row-cols-sm-2 row-cols-1 ">
+   
    
     <div class="col">
       <div id="box">
-        <i class="fa-solid fa-person-biking fs-1 "></i>
-        <h4 style="font-size: 18px;" class="p-2">5670 M</h4>
-        <h5 class="text-secondary fw-semibold" style="font-size: 14px;">CYCLING TRACK</h5>
+        <i class="fa-solid fa-person-biking fs-1"></i>
+        <h4 class="p-2">5670 M</h4>
+        <h4 class="text-secondary fw-semibold">CYCLING TRACK</h4>
       </div>
     </div>
+
     <div class="col">
       <div id="box">
         <i class="fa-solid fa-map-location-dot fs-1"></i>
-        <h4 style="font-size: 18px;" class="p-2">480 M</h4>
-        <h5 class="text-secondary fw-semibold" style="font-size: 14px;">DISTANCE COVERED</h5>
+        <h4 class="p-2">480 M</h4>
+        <h4 class="text-secondary fw-semibold" >DISTANCE COVERED</h4>
       </div>
     </div>
     <div class="col">
       <div id="box">
         <i class="fa-solid fa-person-hiking fs-1"></i>
-        <h4 style="font-size: 18px;" class="p-2">5670 M</h4>
-        <h5 class="text-secondary fw-semibold" style="font-size: 14px;">ALTITUDE HIKED</h5>
+        <h4  class="p-2">5670 M</h4>
+        <h4 class="text-secondary fw-semibold">ALTITUDE HIKED</h4>
       </div>
     </div>
     <div class="col">
       <div id="box">
         <i class="fa-solid fa-sailboat fs-1"></i>
-        <h4 style="font-size: 18px;" class="p-2">180 KM</h4>
-        <h5 class="text-secondary fw-semibold" style="font-size: 14px;">SAILDING DISTANCE</h5>
+        <h4 class="p-2">180 KM</h4>
+        <h4 class="text-secondary fw-semibold">SAILDING DISTANCE</h4>
       </div>
     </div>
     <div class="col">
       <div id="box">
         <i class="fa-solid fa-cloud-sun fs-1"></i>
-        <h4 style="font-size: 18px;" class="p-2">570 DAYS</h4>
-        <h5 class="text-secondary fw-semibold" style="font-size: 14px;">SPEND ADVANTURE</h5>
+        <h4  class="p-2">570 DAYS</h4>
+        <h4 class="text-secondary fw-semibold">SPEND ADVANTURE</h4>
       </div>
     </div>
     <div class="col">
       <div id="box">
         <i class="fa-solid fa-locust fs-1"></i>
-        <h4 style="font-size: 18px;" class="p-2">537 M</h4>
-        <h5 class="text-secondary fw-semibold" style="font-size: 14px;">JUNGLE DISTANCE</h5>
+        <h4  class="p-2">537 M</h4>
+        <h4 class="text-secondary fw-semibold">JUNGLE DISTANCE</h4>
       </div>
     </div>
   </div> 
@@ -542,18 +585,19 @@
 </section>
 <!--FUN SECTION END-->
 <!--SUBSCRIBE SECTION START-->
+ 
 <section id="subscibe_section">
-  <div class="container">
+  <div class="container-lg">
     <div class="row text-center text-white py-5 px-3">
       <div class="col">
 
       </div>
       <div class="col-md-9 ">
-        <h2 class="fw-semibold">SUBSCRIBE FOR TRAVEL NEWSLETTERS</h2>
+        <h3 class="fw-semibold">SUBSCRIBE FOR TRAVEL NEWSLETTERS</h3>
         <p class="px-3 py-2 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, repellat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, adipisci.</p>
 
         <input type="search" name="search" placeholder="Search here" class="text-white">
-        <button >SEARCH</button>
+        <button>SEARCH</button>
       </div>
     </div>
   </div>
@@ -565,15 +609,15 @@
 <!--POPULER SECTION START-->
 
 <section id="populer_section">
-  <div class="container pb-5">
+  <div class="container pb-5 ">
     <h2 class="text-center text-white py-4">POPULER DESTINATION</h2>
-    <div class="row g-3 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1">
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 px-2 py-2">
       
       
       <div class="col">
         <div id="box">
-          <img src="./assist/img/dest1.jpg" alt="">
-          <div class="p-3">
+          <img src="./assist/img/dest1.jpg" alt="" width="100%">
+          <div class="">
           <p class="p1"><span>$999</span> Rome,Florence & Venice 9-Night Vacation w/Air</p>
           <p class="p2">This is the lowest price we've seen in four years for a nine-night</p>
           </div>
@@ -583,7 +627,7 @@
       <div class="col">
         <div id="box" >
           <img src="./assist/img/dest2.jpg" alt="">
-          <div class="p-3">
+          <div class="">
           <p class="p1"><span>$1699</span>Austrilia: Sydney & Fiji Vacation w/Air,Save $550</p>
           <p class="p2">This is the lowest price we've seen in four years for a nine-night</p>
         </div>
@@ -593,7 +637,7 @@
       <div class="col">
         <div id="box">
           <img src="./assist/img/dest3.jpg" alt="">
-          <div class="p-3">
+          <div class="">
           <p class="p1"><span>$1699</span> Greek Islands 8-Nights Vacation w/Air,<span>Save $1060</span> </p>
           <p class="p2">This is the lowest price we've seen in four years for a nine-night</p>
         </div>
@@ -603,8 +647,8 @@
       <div class="col">
         <div id="box">
           <img src="./assist/img/dest4.jpg" alt="">
-          <div class="p-3">
-          <p class="p1"><span>$899</span> Ireland & Germany 6-Nights Adventure w/Air </p>
+          <div class="">
+          <p class="p1"><span>$899</span> Ireland & Germany 6-Nights Adventure w/Air<br><br></p>
           <p class="p2">This is the lowest price we've seen in four years for a nine-night</p>
         </div>
         </div>
@@ -613,7 +657,7 @@
       <div class="col">
         <div id="box">
           <img src="./assist/img/dest5.jpg" alt="">
-          <div class="p-3">
+          <div class="">
           <p class="p1"><span>$1299</span> Morocco 4-Star Escorted Vacation w/Air, <span>Save $1600</span></p>
           <p class="p2">This is the lowest price we've seen in four years for a nine-night</p>
         </div>
@@ -623,7 +667,7 @@
       <div class="col">
         <div id="box" >
           <img src="./assist/img/dest6.jpg" alt="">
-          <div class="p-3">
+          <div class="">
           <p class="p1"><span>$639</span>Cabo All-Inclusive Beach Getaway w/Air, <span>Save $250</span></p>
           <p class="p2">This is the lowest price we've seen in four years for a nine-night</p>
         </div>
@@ -633,7 +677,7 @@
       <div class="col">
         <div id="box">
           <img src="./assist/img/dest7.jpg" alt="">
-          <div class="p-3">
+          <div class="">
           <p class="p1"><span>$2299</span> New Zealand: Multi-City Trip w/Tours & Car Rental  </p>
           <p class="p2">This is the lowest price we've seen in four years for a nine-night</p>
         </div>
@@ -643,7 +687,7 @@
       <div class="col">
         <div id="box">
           <img src="./assist/img/dest8.jpg" alt="">
-          <div class="p-3">
+          <div class="">
           <p class="p1"><span>$1942</span> & up Turkey 8-Nt. Trip w/Air,Guided Tours & Hotels</p>
           <p class="p2">This is the lowest price we've seen in four years for a nine-night</p>
         </div>
@@ -653,9 +697,201 @@
     </div>
   </div>
 </section>
-
+ 
 
 <!--POPULER SECTION END-->
+<!--ESTIMATE SECTION START-->
+
+<section id="estimate_section">
+
+  <img src="./assist/img/estimate.png" alt="" id="image" class="d-none d-md-block">
+ 
+   
+  <div class="container-lg ">
+     <h2 class="text-white pt-5">GET A QUICK ESTIMATE!</h2>
+  <h5 class="text-white fw-semibold">GET A PROFFESIONAL HELP</h5>
+  <div class="line"></div>
+   <div class="row d-flex px-2 py-4 rol-cols-lg-5 row-cols-md-2 row-cols-sm-1">
+   
+   
+        <div class="col-md-2">
+          <select class="comman mt-2 p-2" >
+            <option value="1" selected>Travel Purpose</option>
+            <option value="2">..create options...</option>
+        </select>
+        </div>
+
+        <div class="col-md-2">
+          <input type="date" name="date" class="comman mt-2 p-2"/>
+        </div>        
+   
+   
+        <div class="col-md-2">
+          <select class="comman mt-2 p-2" >
+            <option value="1" selected>Number Of People</option>
+            <option value="2">...create options</option>         
+          </select>
+        </div>
+   
+          <div class="col-md-2">
+            <input type="text" name="emailtext" class="comman mt-2 p-2" placeholder="Your Email"/>
+          </div>
+          
+          <div class="col-md-3 ">
+            <button class="comman fw-semibold mt-2 p-2" style="background-color: #FD9108;border:1px solid #FD9108" >CALCULATE NOW</button>
+          </div>
+        
+    <!-- </div> -->
+   </div>
+    
+  </div>
+</section>
+
+
+<!--ESTIMATE SECTION END-->
+<!--BLOG SECTION START-->
+
+<section id="blog_section">
+ <div class="container-lg">
+  
+  <div class="row ">
+    <div class="col-2">
+    </div>
+    <div class="col-8">
+      <div class="col p-4 text-center">
+        <h2 class=" p-4">LATEST BLOG</h2>
+        <p class="" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem saepe quia, optio mollitia ad libero aspernatur aliquid? Iusto, iure vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, inventore?</p>
+      </div>
+  </div>
+
+   <div class="row py-4 row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1">
+
+      <div class="col-6 px-4 d-flex " >
+          <div class="col-md-6 col-sm-6">
+              <img src="./assist/img/blog1.jpeg" alt=""  width="100%" height="130px">
+          </div>
+          <div class="col-10 col-md-6 col-sm-6 px-3">
+              <h6 class="pb-1" style="font-size: 12px;">Sep 07,2024</h6>
+              <h5 class="fw-semibold" style="font-size:14px;">10 THINGS TODO BEFORE TRAVEL</h5>
+              <div class="line2"></div>
+              <p class="py-2 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorem saepe repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, error. </p>
+          </div>
+      </div>
+
+        <div class="col-6 px-4 d-flex " >
+            <div class="col col-md-6 col-sm-6">
+               <img src="./assist/img/blog2.jpeg" alt=""  width="100%" height="130px" >
+           </div>
+            <div class="col-10 col-md-6 col-sm-6 px-3">
+              <h6 class="pb-1" style="font-size: 12px;">Sep 07,2024</h6>
+              <h5 class="fw-semibold" style="font-size:14px;">SAY NO TO LASY LIFE</h5>
+              <div class="line2"></div>
+              <p class="py-2 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorem saepe repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, error. </p>
+            </div> 
+        </div>
+
+ </div>
+</section>
+
+<!--BLOG SECTION END-->
+
+<!-- FOOTER START -->
+
+<footer>
+  <div class="container-lg py-4">
+    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2 row-cols-1 text-white font-weight-lighter
+       d-flex align-items-center">
+      <div class="col-3 mt-4">
+        <h4 class="display-6 fs-3">Top Countries</h4>
+           <ul class="top_countries">
+            <li>Flights to United State</li>
+            <li>Flights to United Kingdom</li>
+            <li>Flights to Spain</li>
+            <li>Flights to Thailand</li>
+            <li>Flights to India</li>
+            <li>Flights to Italy</li>
+            <li>Flights to Germany</li>
+            <li>Flights to Denmark</li>
+            <li>Flights to France</li>
+            <li>Flights to Australia</li>
+           </ul>
+      </div>
+    
+      <div class="col-4 mt-4">
+        <h4 class="display-6 fs-3">Top Cities</h4>
+          <ul class="top_cities">
+            <li>Flights to Londan,United Kingdom</li>
+            <li>Flights to New York, United States</li>
+            <li>Flights to Bangkok, Thailand</li>
+            <li>Flights to Compehagen, Denmark</li>
+            <li>Flights to Orlando, United States</li>
+            <li>Flights to Paris, France</li>
+            <li>Flights to Dubai, United Arab Empirates</li>
+            <li>Flights to Singapore, Singapore</li>
+            <li>Flights to Istanbul, Turkey</li>
+            <li>Flights to Hong Kong, Hong Kong</li>
+          </ul>
+        </div>
+     
+        <div class="col-3">
+          <h4 class="display-6 fs-3">Internation sites</h4>
+          <ul class="countryflag_1">
+          <li class="billige">&nbspBillige Flybilleter</li>
+          <li class="cflights">&nbspCheap Flights</li>
+          <li class="flights">&nbspFlights</li>
+          <li class="usa">&nbspCheap Flights</li>
+          <li class="voluoes">&nbspVuelos Baratos</li>
+          <li class="helvat">&nbspHelvat Lennot</li>
+          <li class="vol_pass">&nbspVol Pass Cher</li>
+        </ul>
+       </div>
+      <div class="col-2">
+          <h3></h3>
+          <ul class="countryflag_2">
+          <li class="voli">&nbsp Voli low cost</li>
+          <li class="cheap_3">&nbsp Billige flybilleter</li>
+          <li class="goedkope">&nbsp Goedkope vliegtickets</li>
+          <li class="vool">&nbsp Vool Baratos</li>
+          <li class="abzzz">&nbsp Abzzzzzzzz</li>
+          <li class="flygresor">&nbsp Flygresor</li>
+        </ul>
+      </div>
+    
+    </div>
+    
+<!-- top countries end -->
+ 
+    <div class="row row-cols-lg row-cols-md-1 ">
+      <div class="col-md-10">
+        <nav class="nav navbar-expand-lg ">
+          <img src="./assist/img/favicon.ico" alt="" height="100% " class="pt-3">
+           <ul class="p d-flex nav_menu" >
+              <li class="px-2">About Us</li>
+              <li class="px-2">Jobs</li>
+              <li class="px-2">Press</li>
+              <li class="px-2">Affilate</li>
+              <li class="px-2">Terms of Use</li>
+              <li class="px-2">Privacy Policy</li>
+              <li class="px-2">Cookies</li>
+              <li class="px-2">Airlines</li>
+              <li class="px-2">Apps</li>
+              <li class="px-2">Helps</li>
+        </ul>
+        </nav>
+        <p class="px-4 py-0 " style="font-size: 14px;">momondo.com.uk is a free, independent global travel search site comparing billions of cheap flights, hotels and cars hire deals</p>
+      </div>
+      <div class="col-md-2 fs-2">
+        <i class="fa-brands fa-square-twitter px-2 " ></i>
+        <i class="fa-brands fa-facebook px-2"></i>
+        <i class="fa-brands fa-google-plus px-2"></i>
+      </div>
+ 
+    </div>
+
+ </div>
+
+</footer>
+ <!-- FOOTER END -->
 
 
 
